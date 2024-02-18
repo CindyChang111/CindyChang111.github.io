@@ -1,7 +1,193 @@
-html body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(75, 75, 75);
-    background-color: rgb(220, 220, 220);
-    margin: 0;
-    padding-bottom: 100px;
+#title {
+    color: black;
+    font-family: Lato, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
 }
+
+#web-top {
+    position: absolute;
+    top: 220px;
+    left: 60px;
+    background: #dbc4f5;
+    transform: rotate(-10deg) skew(-5deg);
+    height: 400px;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 3%;
+}
+
+#system{
+    position: relative;
+    top: 130px;
+    left: 110px;
+    background-color: black;
+    transform: rotate(-10deg) skew(-5deg);
+    height: 60px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid black;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    transform-origin: bottom;
+}
+
+#inky {
+    position: relative;
+    top: 120px;
+    left: 200px;
+    background-color: white;
+    transform: rotate(-10deg) skew(-5deg);
+    height: 150px;
+    width: 180px;
+    border-radius: 3%;
+    border: 3px solid black;
+}
+
+
+#css-stillife {
+    position: absolute;
+    top: 370px;
+    left: 20px;
+    background-color: white;
+    transform: rotate(-10deg) skew(-5deg);
+    height: 130px;
+    width: 160px;
+    border: 3px solid black;
+    border-radius: 3%;
+}
+
+#box {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: grey;
+    transform: rotate(0deg) skew(-10deg);
+    height: 70px;
+    width: 80px;
+    border-radius: 3%;
+}
+#book {
+    position: absolute;
+    top: 70px;
+    left: 95px;
+    background-color: black;
+    transform: rotate(-10deg) skew(30deg);
+    height: 50px;
+    width: 50px;
+    border-radius: 3%;
+}
+#circle {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    background-color: black;
+    transform: rotate(deg) skew(deg);
+    height: 40px;
+    width: 40px;
+    border-radius: 40%;
+}
+
+#bottle {
+    position: absolute;
+    top: 70px;
+    left: 2px;
+    background-color: #d1d1d1;
+    transform: rotate(deg) skew(deg);
+    height: 35px;
+    width: 40px;
+    border-radius: 30%;
+    border: 3px solid black;
+}
+
+
+#my-website {
+    position: absolute;
+    top: 450px;
+    left: 250px;
+    background-color: white;
+    transform: rotate(-10deg) skew(-5deg);
+    height: 100px;
+    width: 150px;
+    border-radius: 3%;
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+#background1 {
+    position: absolute;
+    top: 450px;
+    left: 25px;
+    background-color: black;
+    transform: rotate(-10deg) skew(-5deg);
+    height: 50px;
+    width: 150px;
+    border-radius: 3%;
+}
+.text-wrapper {
+    color: black;
+    font-family: Lato, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-weight: bold;
+    letter-spacing: .1vw; 
+    width: 100%;
+    /* position: relative;
+    font-size: 8vw;
+    overflow: hidden; */
+}
+#intro1 {
+    width: 00%;
+    position: absolute;
+    top: 0;
+    animation: lefttextscroll infinite 8s linear;
+}
+  
+#intro2 {
+    width: 300%;
+    position: absolute;
+    bottom: 0;
+    animation: righttextscroll infinite 6s linear;
+}
+
+img {
+    position: absolute;
+    height: 143px;
+    width: 176px;
+    position: relative;
+    top: 3px;
+    left: 2px;
+    transform: rotate(deg) skew(deg);
+    border-radius: 3%;
+    
+}
+
+#intro1:hover, #intro2:hover {
+    animation-play-state: paused;
+    color: black;
+}
+  
+  
+@keyframes lefttextscroll {
+    from{left: 0px;}
+    to{left: -113px;}
+}
+
+@keyframes righttextscroll {
+    from{left: -113px;}
+    to{left: 0px;}
+}
+
+.bounce-right:hover {
+    transform: translateX(50px);
+    cursor: pointer;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
