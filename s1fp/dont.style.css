@@ -1,0 +1,34 @@
+
+
+#cake-top {
+    position: absolute;
+    top: 150px;
+    left: 520px;
+    background-color: #fdc9ff;
+    transform: rotate(deg) skew(deg);
+    height: 250px;
+    width: 400px;
+    border-radius: 48%
+}
+
+#cake-mid {
+    position: absolute;
+    top: 187px;
+    left: 523px;
+    background-color: #548756;
+    transform: rotate(deg) skew(deg);
+    height: 250px;
+    width: 389px;
+    border-radius: 48%
+}
+
+#cake-bottom {
+    position: absolute;
+    top: 222px;
+    left: 522px;
+    background-color: #fdc9ff;
+    transform: rotate(deg) skew(deg);
+    height: 250px;
+    width: 393px;
+    border-radius: 48%
+}
