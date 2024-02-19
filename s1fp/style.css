@@ -215,7 +215,7 @@ img {
 }
 
 .bounce-top:hover {
-    transform: translateY(50px);
+    transform: translateY(100px);
     cursor: pointer;
     animation-name: bounce;
     animation-timing-function: ease;
