@@ -214,8 +214,8 @@ img {
     to{left: 0px;}
 }
 
-.bounce-right:hover {
-    transform: translateX(50px);
+.bounce-top:hover {
+    transform: translateY(50px);
     cursor: pointer;
     animation-name: bounce;
     animation-timing-function: ease;
