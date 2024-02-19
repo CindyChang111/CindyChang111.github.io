@@ -9,7 +9,7 @@
 #web-top {
     position: absolute;
     top: 220px;
-    left: 60px;
+    left: 360px;
     background: #dbc4f5;
     transform: rotate(-10deg) skew(-5deg);
     height: 400px;
@@ -20,8 +20,8 @@
 
 #system{
     position: relative;
-    top: 130px;
-    left: 110px;
+    top: 280px;
+    left: 400px;
     background-color: black;
     transform: rotate(-10deg) skew(-5deg);
     height: 60px;
@@ -35,10 +35,10 @@
 
 #inky {
     position: relative;
-    top: 120px;
+    top: -40px;
     left: 200px;
     background-color: white;
-    transform: rotate(-10deg) skew(-5deg);
+    transform: rotate(-deg) skew(deg);
     height: 150px;
     width: 180px;
     border-radius: 3%;
@@ -49,7 +49,7 @@
 #css-stillife {
     position: absolute;
     top: 370px;
-    left: 20px;
+    left: 300px;
     background-color: white;
     transform: rotate(-10deg) skew(-5deg);
     height: 130px;
@@ -105,7 +105,7 @@
 #my-website {
     position: absolute;
     top: 450px;
-    left: 250px;
+    left: 550px;
     background-color: white;
     transform: rotate(-10deg) skew(-5deg);
     height: 100px;
@@ -161,6 +161,43 @@ img {
     
 }
 
+#note1{
+    position: absolute;
+    top: 560px;
+    left: 320px;
+    background-color: white;
+    transform: rotate(-10deg) skew(-5deg);
+    height: 20px;
+    width: 80px;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 20%;
+    border: 3px solid black;
+}
+
+#note2{
+    position: absolute;
+    top: 600px;
+    left: 320px;
+    background-color: white;
+    transform: rotate(-25deg) skew(-5deg);
+    height: 20px;
+    width: 100px;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 20%;
+    border: 3px solid black;
+}
+#note3{
+    position: absolute;
+    top: 609px;
+    left: 340px;
+    background-color:black;
+    transform: rotate(-25deg) skew(-5deg);
+    height: 18px;
+    width: 30px;
+   
+    border: 3px solid black;
+}
+
 #intro1:hover, #intro2:hover {
     animation-play-state: paused;
     color: black;
@@ -177,17 +214,28 @@ img {
     to{left: 0px;}
 }
 
-.bounce-right:hover {
-    transform: translateX(50px);
+.bounce-top:hover {
+    transform: translateY(50px);
     cursor: pointer;
     animation-name: bounce;
     animation-timing-function: ease;
 }
 
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
 
 @keyframes bounce {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-50px); }
   100% { transform: translateY(0); }
+}
+
+svg {
+    width: 450px;
+    position: absolute;
+    top: 270px;
+    left: 700px;
 }
 
