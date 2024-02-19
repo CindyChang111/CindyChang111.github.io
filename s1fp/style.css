@@ -2,7 +2,7 @@
     color: black;
     font-family: Lato, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -20,7 +20,7 @@
 
 #system{
     position: relative;
-    top: 280px;
+    top: 200px;
     left: 400px;
     background-color: black;
     transform: rotate(-10deg) skew(-5deg);
@@ -35,7 +35,7 @@
 
 #inky {
     position: relative;
-    top: -40px;
+    top: -30px;
     left: 200px;
     background-color: white;
     transform: rotate(-deg) skew(deg);
@@ -151,12 +151,11 @@
 
 img {
     position: absolute;
-    height: 143px;
+    height: 146px;
     width: 176px;
     position: relative;
-    top: 3px;
-    left: 2px;
-    transform: rotate(deg) skew(deg);
+    /* top: 3px; */
+    left: 2px; 
     border-radius: 3%;
     
 }
@@ -198,6 +197,15 @@ img {
     border: 3px solid black;
 }
 
+#leslie {
+    position: fixed;
+    left: -50px;
+    bottom: 0px;
+    width: 200px ;
+
+    height: auto;
+}
+
 #intro1:hover, #intro2:hover {
     animation-play-state: paused;
     color: black;
@@ -233,7 +241,7 @@ img {
 }
 
 svg {
-    width: 470px;
+    width: 450px;
     position: absolute;
     top: 270px;
     left: 700px;
