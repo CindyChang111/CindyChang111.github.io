@@ -9,7 +9,7 @@
 #web-top {
     position: absolute;
     top: 220px;
-    left: 260px;
+    left: 360px;
     background: #dbc4f5;
     transform: rotate(-10deg) skew(-5deg);
     height: 400px;
@@ -21,7 +21,7 @@
 #system{
     position: relative;
     top: 280px;
-    left: 300px;
+    left: 400px;
     background-color: black;
     transform: rotate(-10deg) skew(-5deg);
     height: 60px;
@@ -49,7 +49,7 @@
 #css-stillife {
     position: absolute;
     top: 370px;
-    left: 200px;
+    left: 300px;
     background-color: white;
     transform: rotate(-10deg) skew(-5deg);
     height: 130px;
@@ -105,7 +105,7 @@
 #my-website {
     position: absolute;
     top: 450px;
-    left: 450px;
+    left: 550px;
     background-color: white;
     transform: rotate(-10deg) skew(-5deg);
     height: 100px;
@@ -164,7 +164,7 @@ img {
 #note1{
     position: absolute;
     top: 560px;
-    left: 220px;
+    left: 320px;
     background-color: white;
     transform: rotate(-10deg) skew(-5deg);
     height: 20px;
@@ -177,7 +177,7 @@ img {
 #note2{
     position: absolute;
     top: 600px;
-    left: 220px;
+    left: 320px;
     background-color: white;
     transform: rotate(-25deg) skew(-5deg);
     height: 20px;
@@ -189,7 +189,7 @@ img {
 #note3{
     position: absolute;
     top: 609px;
-    left: 240px;
+    left: 340px;
     background-color:black;
     transform: rotate(-25deg) skew(-5deg);
     height: 18px;
@@ -215,16 +215,27 @@ img {
 }
 
 .bounce-top:hover {
-    transform: translateY(100px);
+    transform: translateY(50px);
     cursor: pointer;
     animation-name: bounce;
     animation-timing-function: ease;
 }
 
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
 
 @keyframes bounce {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-50px); }
   100% { transform: translateY(0); }
+}
+
+svg {
+    width: 450px;
+    position: absolute;
+    top: 270px;
+    left: 700px;
 }
 
