@@ -1,4 +1,3 @@
-
 body {background-color: #a3311a;
 margin: 20vw;}
 #title {
@@ -109,32 +108,22 @@ margin: 20vw;}
     background-repeat: no-repeat;
     background-position: center;
 }
-
 #duck:hover {
     background-image: url("duck-hover.png");
 }
-
 #duck:hover ~ #duck-hover {
     opacity:1;
     display: block;
 }
-
 input {
     display: none;
 }
-
 #duckcheckbox:checked ~ #duck-big {
     display: block;
 }
-
 #duck-big {
-    /* opacity: 0; */
-    /* pointer-events: none; */
-    /* position: absolute;
-    bottom: 0;
-    left: 0; */
-    margin-left: -30vw;
-    margin-top: 10vw;
+    margin-left: 0vw;;
+    margin-top: 20vw;
     display: none;
     background-image: url("duck-sprite.png");
     background-size: 200% 100%;
@@ -150,7 +139,6 @@ input {
     animation-play-state: play; 
 }
 
-
 /*bean*/
 #bean {
     width: 15vw;
@@ -162,49 +150,37 @@ input {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 #bean:hover {
     background-image: url("bean-hover.png");
 }
-
 #bean:hover ~ #bean-hover {
     opacity:1;
     display: block;
 }
-
 #bean:hover ~ #bean-hover {
     opacity:1;
     display: block;
 }
-
 input {
     display: none;
 }
-
 #beancheckbox:checked ~ #bean-big {
     display: block;
 }
-
 #bean-big {
-    /* opacity: 0; */
-    /* pointer-events: none; */
-    /* position: absolute;
-    bottom: 0;
-    left: 0; */
-    margin-left: -30vw;
-    margin-top: 10vw;
+    margin-left: 0vw;;
+    margin-top: 20vw;
     display: none;
     background-image: url("bean-sprite.png");
     background-size: 200% 100%;
     width: 60vw;
     height: 60vw;
-    animation: bean-go 500ms steps(4) infinite;
+    animation: bean-go 600ms steps(4) infinite;
     animation-play-state: paused; 
 }
-
 #bean-big:hover {
     cursor: wait;
-    animation: bean-go 500ms steps(4) infinite;
+    animation: bean-go 600ms steps(4) infinite;
     animation-play-state: play; 
 }
 
@@ -243,8 +219,8 @@ input {
     /* position: absolute;
     bottom: 0;
     left: 0; */
-    margin-left: -30vw;
-    margin-top: 10vw;
+    margin-left: 0vw;;
+    margin-top: 20vw;
     display: none;
     background-image: url("little-sprite.png");
     background-size: 200% 100%;
@@ -330,6 +306,24 @@ input {
 
   
 @keyframes duck-go {
+    from {
+          background-position: 0% 0%;
+    }
+    to {
+          background-position: -400% 0%;
+    }
+}
+
+@keyframes bean-go {
+    from {
+          background-position: 0% 0%;
+    }
+    to {
+          background-position: -400% 0%;
+    }
+}
+
+@keyframes little-go {
     from {
           background-position: 0% 0%;
     }
