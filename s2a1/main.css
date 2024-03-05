@@ -20,83 +20,6 @@ margin: 20vw;}
     transition: 1s;
 }
 
-/*
-#one {
-    /* margin-left: 20vw; 
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-color: red;
-
-}
-
-
-#two {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-color: blue;
-}
-
-#three {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-color: yellow;
-}
-
-#one:hover ~ #big-one {
-    background-color: purple;
-    display: block;
-}
-#two:hover ~ #big-two {
-    background-color: pink;
-    display: block;
-}
-#three:hover ~ #big-three {
-    background-color: green;
-    display: block;
-}
-
-#big-one {
-    display: none;
-    width: 60vw;
-    height: 60vw;
-    background-color: white;
-}
-
-#big-two {
-    display: none;
-    width: 60vw;
-    height: 60vw;
-    background-color: white;
-}
-
-#big-three {
-    display: none;
-    width: 60vw;
-    height: 60vw;
-    background-color: white;
-}
-*/
-
-/* #duck-hover {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-image: url("duck-hover.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    opacity: 0;
-    
-} */
-
 /*duck*/
 #duck {
     width: 15vw;
@@ -122,13 +45,13 @@ input {
     display: block;
 }
 #duck-big {
-    margin-left: 0vw;;
+    margin-left: 5vw;;
     margin-top: 20vw;
     display: none;
     background-image: url("duck-sprite.png");
     background-size: 200% 100%;
-    width: 60vw;
-    height: 60vw;
+    width: 48vw;
+    height: 48vw;
     animation: duck-go 500ms steps(4) infinite;
     animation-play-state: paused; 
 }
@@ -168,13 +91,13 @@ input {
     display: block;
 }
 #bean-big {
-    margin-left: 0vw;;
+    margin-left: 5vw;;
     margin-top: 20vw;
     display: none;
     background-image: url("bean-sprite.png");
     background-size: 200% 100%;
-    width: 60vw;
-    height: 60vw;
+    width: 48vw;
+    height: 48vw;
     animation: bean-go 600ms steps(4) infinite;
     animation-play-state: paused; 
 }
@@ -219,13 +142,13 @@ input {
     /* position: absolute;
     bottom: 0;
     left: 0; */
-    margin-left: 0vw;;
-    margin-top: 20vw;
+    margin-left: 8vw;;
+    margin-top: 10vw;
     display: none;
     background-image: url("little-sprite.png");
     background-size: 200% 100%;
-    width: 60vw;
-    height: 60vw;
+    width: 52vw;
+    height: 52vw;
     animation: little-go 500ms steps(4) infinite;
     animation-play-state: paused; 
 }
@@ -236,71 +159,11 @@ input {
     animation-play-state: play; 
 }
 
-/*
-#little {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-image: url("little.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    opacity: 0;
-}
 
-#little-hover {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-image: url("little-hover.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#little:hover ~ #little-hover {
-    opacity:1;
-    display: block;
-}
-
-/*control big
-#duck:active ~ #duck-big {
-    display: block;
-}
-#bean:active ~ #bean-big {
-    background-color: pink;
-    display: block;
-}
-#little:active ~ #little-big {
-    background-color: green;
-    display: block;
-}
-
-
-#bean-big {
-    display: none;
-    width: 60vw;
-    height: 60vw;
-    background-color: white;
-}
-
-#little-big {
-    display: none;
-    width: 60vw;
-    height: 60vw;
-    background-color: white;
-}
-*/
 
 .floatclear {
     clear: both;
 }
-
-
-
 
 
 
