@@ -1,261 +1,50 @@
-body {background-color: #a3311a;
-margin: 20vw;}
-#title {
-    color: white;
-    font-family: "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-}
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
 
-#story{
-    color: white;
-    font-family: "", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-    font-weight: medium;
-    font-size: 15px;
-    text-align: center;
-}
+<body>
+    <input type="checkbox" id="duckcheckbox">
+    <input type="checkbox" id="beancheckbox">
+    <input type="checkbox" id="littlecheckbox">
+    <div id="title">
+        Duck, Bean, and Little H
+    </div>
 
-.animation{
-    transition: 1s;
-}
+    <div id="story">
+        Once upon a time, Duck, bean, and Little H ran into each other.
+    </div>
 
-
-/*duck*/
-#duck {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-image: url("duck.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#duck:hover {
-    background-image: url("duck-hover.png");
-}
-#duck:hover ~ #duck-hover {
-    opacity:1;
-    display: block;
-}
-input {
-    display: none;
-}
-#duckcheckbox:checked ~ #duck-big {
-    display: block;
-}
-#duck-big {
-    margin-left: 5vw;;
-    margin-top: 20vw;
-    display: none;
-    background-image: url("duck-sprite.png");
-    background-size: 200% 100%;
-    width: 48vw;
-    height: 48vw;
-    animation: duck-go 500ms steps(4) infinite;
-    animation-play-state: paused; 
-}
-
-#duck-big:hover {
-    cursor: wait;
-    animation: duck-go 500ms steps(4) infinite;
-    animation-play-state: play; 
-}
-
-/*bean*/
-#bean {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-image: url("bean.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#bean:hover {
-    background-image: url("bean-hover.png");
-}
-#bean:hover ~ #bean-hover {
-    opacity:1;
-    display: block;
-}
-#bean:hover ~ #bean-hover {
-    opacity:1;
-    display: block;
-}
-input {
-    display: none;
-}
-#beancheckbox:checked ~ #bean-big {
-    display: block;
-}
-#bean-big {
-    margin-left: 5vw;;
-    margin-top: 20vw;
-    display: none;
-    background-image: url("bean-sprite.png");
-    background-size: 200% 100%;
-    width: 48vw;
-    height: 48vw;
-    animation: bean-go 600ms steps(4) infinite;
-    animation-play-state: paused; 
-}
-#bean-big:hover {
-    cursor: wait;
-    animation: bean-go 600ms steps(4) infinite;
-    animation-play-state: play; 
-}
-
-/*little*/
-#little {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-image: url("little.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#little:hover {
-    background-image: url("little-hover.png");
-}
-
-#little:hover ~ #little-hover {
-    opacity:1;
-    display: block;
-}
-
-input {
-    display: none;
-}
-
-#littlecheckbox:checked ~ #little-big {
-    display: block;
-}
-
-#little-big {
-    /* opacity: 0; */
-    /* pointer-events: none; */
-    /* position: absolute;
-    bottom: 0;
-    left: 0; */
-    margin-left: 8vw;;
-    margin-top: 5vw;
-    display: none;
-    background-image: url("little-sprite.png");
-    background-size: 200% 100%;
-    width: 55vw;
-    height: 55vw;
-    animation: little-go 500ms steps(4) infinite;
-    animation-play-state: paused; 
-}
-
-#little-big:hover {
-    cursor: wait;
-    animation: little-go 500ms steps(4) infinite;
-    animation-play-state: play; 
-}
-
-/*
-#little {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-image: url("little.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    opacity: 0;
-}
-
-#little-hover {
-    width: 15vw;
-    height: 15vw;
-    margin: 2.5vw;
-    float: left;
-    background-image: url("little-hover.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#little:hover ~ #little-hover {
-    opacity:1;
-    display: block;
-}
-
-/*control big
-#duck:active ~ #duck-big {
-    display: block;
-}
-#bean:active ~ #bean-big {
-    background-color: pink;
-    display: block;
-}
-#little:active ~ #little-big {
-    background-color: green;
-    display: block;
-}
+    <div title="red box" id="one" class="animation reciever"></div>
+    <div title="blue box" id="two" class="animation reciever"></div>
+    <div title="yellow box" id="three" class="animation"></div>
+<div class="floatclear"></div>
 
 
-#bean-big {
-    display: none;
-    width: 60vw;
-    height: 60vw;
-    background-color: white;
-}
+<div id="big-one"></div>
+<div id="big-two"></div>
+<div id="big-three"></div>
 
-#little-big {
-    display: none;
-    width: 60vw;
-    height: 60vw;
-    background-color: white;
-}
-*/
+<label for="duckcheckbox" id="duck" alt="a white duck with orange feet"></label> 
+<label for="beancheckbox" id="bean" alt="a green bean"></label>    
+<label for="littlecheckbox" id="little" alt="a little human wearing a blue shirt with a letter 'H' and pink pants"></label>    
 
-.floatclear {
-    clear: both;
-}
+<div id="duck-big" alt="a white duck is carrying a green bean who is carrying a little human on top of its head, they are movinf forward"></div>
+<div id="bean-big" alt="duck is on top of green bean who is on top of little human, all facing away, and turning towards you at the same time"></div>
+<div id="little-big" alt="little human and green bean and duck are climbing while holding each other by hands, little human is at the center while duck and bean are in front and behind it"></div>
 
 
 
+<!-- 
+<div id="duck-hover"></div>
+<div id="bean-hover"></div>
+<div id="little-hover"></div>
+-->
 
 
+    <!-- <section>
 
-  
-@keyframes duck-go {
-    from {
-          background-position: 0% 0%;
-    }
-    to {
-          background-position: -400% 0%;
-    }
-}
+        <h4>Animating on Hover:</h4>
+        <div id="runningman"></div>
+    </section> -->
 
-@keyframes bean-go {
-    from {
-          background-position: 0% 0%;
-    }
-    to {
-          background-position: -400% 0%;
-    }
-}
-
-@keyframes little-go {
-    from {
-          background-position: 0% 0%;
-    }
-    to {
-          background-position: -400% 0%;
-    }
-}
-  
-
-
-  
+</body>
