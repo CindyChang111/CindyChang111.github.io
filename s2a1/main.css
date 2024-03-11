@@ -333,29 +333,5 @@ input {
 }
   
 
-/*
-#runningman {
-    background-image: url("http://uppi.club/-img/running.jpg");
-    background-size: 400% 100%;
-    width: 100vw;
-    height: 75vw;
-    animation: go-man-go 500ms steps(4) infinite;
-    animation-play-state: paused; 
-  }
-  
-  #runningman:hover {
-    cursor: wait;
-    animation: go-man-go 500ms steps(4) infinite;
-    animation-play-state: play; 
-  }
-  
-  @keyframes go-man-go {
-      from {
-          background-position: 0% 0%;
-      }
-      to {
-          background-position: -400% 0%;
-      }
-  }
-*/
+
   
