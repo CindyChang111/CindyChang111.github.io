@@ -20,6 +20,83 @@ margin: 20vw;}
     transition: 1s;
 }
 
+/*
+#one {
+    /* margin-left: 20vw; 
+    width: 15vw;
+    height: 15vw;
+    margin: 2.5vw;
+    float: left;
+    background-color: red;
+
+}
+
+
+#two {
+    width: 15vw;
+    height: 15vw;
+    margin: 2.5vw;
+    float: left;
+    background-color: blue;
+}
+
+#three {
+    width: 15vw;
+    height: 15vw;
+    margin: 2.5vw;
+    float: left;
+    background-color: yellow;
+}
+
+#one:hover ~ #big-one {
+    background-color: purple;
+    display: block;
+}
+#two:hover ~ #big-two {
+    background-color: pink;
+    display: block;
+}
+#three:hover ~ #big-three {
+    background-color: green;
+    display: block;
+}
+
+#big-one {
+    display: none;
+    width: 60vw;
+    height: 60vw;
+    background-color: white;
+}
+
+#big-two {
+    display: none;
+    width: 60vw;
+    height: 60vw;
+    background-color: white;
+}
+
+#big-three {
+    display: none;
+    width: 60vw;
+    height: 60vw;
+    background-color: white;
+}
+*/
+
+/* #duck-hover {
+    width: 15vw;
+    height: 15vw;
+    margin: 2.5vw;
+    float: left;
+    background-image: url("duck-hover.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    opacity: 0;
+    
+} */
+
 /*duck*/
 #duck {
     width: 15vw;
@@ -189,12 +266,45 @@ input {
     display: block;
 }
 
+/*control big
+#duck:active ~ #duck-big {
+    display: block;
+}
+#bean:active ~ #bean-big {
+    background-color: pink;
+    display: block;
+}
+#little:active ~ #little-big {
+    background-color: green;
+    display: block;
+}
 
+
+#bean-big {
+    display: none;
+    width: 60vw;
+    height: 60vw;
+    background-color: white;
+}
+
+#little-big {
+    display: none;
+    width: 60vw;
+    height: 60vw;
+    background-color: white;
+}
+*/
 
 .floatclear {
     clear: both;
 }
- 
+
+
+
+
+
+
+  
 @keyframes duck-go {
     from {
           background-position: 0% 0%;
@@ -221,3 +331,7 @@ input {
           background-position: -400% 0%;
     }
 }
+  
+
+
+  
