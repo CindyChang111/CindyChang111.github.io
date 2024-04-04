@@ -1,0 +1,279 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+#logo { 
+    width: 40vw; 
+    height: 20vw;  
+    background-image: url("curatedchaos-01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5vw; 
+    margin-right: 20vw;
+    margin-bottom: 1vw;
+    margin-left: 30vw;
+
+}
+
+#title {
+    color: #0080ff;
+    font-family: "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+#author {
+    color: #0080ff;
+    font-family: "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+#introduction {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #0080ff;
+    width: 100vw;
+    /* height: 50vw; */
+    margin: 5vw 0;
+    
+}
+
+#envelopewrapper {
+    position: relative;
+    cursor: grab;
+}
+  
+#envelopewrapper:active {
+    cursor: grabbing;
+}
+  
+  
+#envelopewrapper > img {
+    width: 100%;
+    height: auto;
+}
+  
+#closedenv {
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: 1000ms;
+    /* z-index: -1; */
+}
+  
+#openenv{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+  
+#envelopewrapper:hover > #closedenv,
+#envelopewrapper:focus > #closedenv, {
+    opacity: 0;
+}
+  
+#envelopewrapper:hover > #openenv,
+#envelopewrapper:focus > #openenv {
+    opacity: 1;
+}
+
+#introduction > div > img {
+    width: 100%;
+    padding: 20px;
+}
+
+#introwrapper {
+    margin: 10vw 0 0 10vw;
+}
+
+.intro {
+    border: solid px white;
+    color: white;
+    font-family: "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-weight: regular;
+    font-size: 16px;
+    text-align: left;
+    /* padding: 60px; */
+    margin: 0;
+    width: 80%;
+    /* height: 80%; */
+}
+
+.intro2 {
+    border: solid px white;
+    color: white;
+    font-family: "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-weight: regular;
+    font-size: 18px;
+    text-align: left;
+    /* padding: 10px; */
+    /* margin: 0; */
+    /* width: 80%;
+    height: 80%; */
+}
+
+#video { 
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #fac9b8;
+    float: center;
+    width: 80vw; 
+    height: 50vw; 
+    margin: 5vw 0vw;
+} 
+#lydia-video { 
+    
+    height: 50vw; 
+    margin-right: 5%;
+} 
+
+#curated-video { 
+
+    height: 50vw; 
+}
+
+#cindy-video { 
+
+    height: 50vw; 
+    
+}
+
+
+#video > div {
+    border: solid 1px white;
+    padding: 10px;
+    width: 50%;
+}
+
+#Lydia{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #2da05d;
+    width: 80vw;
+    height: 50vw;
+    margin: 5vw 10vw;
+    float: center;
+    /*background-image: url("duck.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;*/
+}
+
+#Lydia > div > img{
+    width: 95%;
+    margin-left: 2vw;
+    border: solid 1px white;
+}
+
+.lydiacaption {
+    border: solid px white;
+    color: white;
+    font-family: "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-weight: regular;
+    font-size: 16px;
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+    width: 80%;
+    height: 80%;
+}
+
+#Cindy{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #2da05d;
+    width: 80vw;
+    height: 50vw;
+    margin: 5vw 10vw;
+    float: left;
+}
+
+#Cindy > div > img {
+    width: 90%;
+    margin-right: 2vw;
+    border: solid 1px white;
+}
+
+.cindycaption {
+    border: solid px white;
+    color: white;
+    font-family: "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-weight: regular;
+    font-size: 16px;
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+    width: 80%;
+    height: 80%;
+}
+
+
+#Draw{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #0080ff;
+    width: 100vw;
+    height: 60vw;
+    margin: 5vw 0;
+
+}
+
+#ipad {
+    position: relative;
+    margin-left: 25vw;
+    margin-bottom: 25vw;
+    background-color: black;
+    height: 35vw;
+    width: 50vw;
+    border-radius: 10%;
+}
+
+#ipad-screen {
+    position: absolute;
+    left: 2.5vw;
+    top: 2.5vw;
+    background-color: white;
+    height: 30vw;
+    width: 45vw;
+    border-radius: 5%;
+}
+
+#Draw > div {
+    width: 100%;
+
+}
+
+.drawcaption {
+    color: white;
+    font-family: "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-weight: regular;
+    font-size: 18px;
+    text-align: center;
+}
+
+canvas {
+    height: 30vw;
+    width: 45vw;
+}
