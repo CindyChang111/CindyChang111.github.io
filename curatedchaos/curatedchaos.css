@@ -136,27 +136,31 @@ body {
 } 
 #lydia-video { 
     
-    height: 50vw; 
-    margin-right: 5%;
+    align-self: center;
+    width:100%;
+   
 } 
 
 #curated-video { 
 
-    height: 50vw; 
+    align-self: center;
+    width:100%;
 }
 
 #cindy-video { 
 
-    height: 50vw; 
+    align-self: center;
+    width:100%;
     
 }
 
 
-#video > div {
-    border: solid 1px white;
+#video > div > img {
+
     padding: 10px;
     width: 50%;
 }
+
 
 #Lydia{
     display: grid;
