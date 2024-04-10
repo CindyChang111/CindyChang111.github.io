@@ -124,7 +124,7 @@ body {
 
 #video { 
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 37.35% 28% 34.65%;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -132,7 +132,7 @@ body {
     float: center;
     width: 80vw; 
     height: 50vw; 
-    margin: 5vw 0vw;
+    margin: 5vw 10vw;
 } 
 #lydia-video { 
     
