@@ -438,22 +438,20 @@ to{
 #annoy-section {
     position: relative;
     width: 100vw;
-    height: 100vh;
 }
 #annoy {
-    position: absolute;
     display: flex;
 }
 
 #annoy-text {
     color: black;
-    font-family: "Unbounded", "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     font-weight: bold;
     font-size: 4vw;
     text-align: center;
     align-self: center;
     width: 40vw;
     margin-left: 30vw;
+    
 }
 
 #angrywoman {
@@ -485,8 +483,7 @@ to{
 
 .shutup-text {
     position: relative;
-    color: black;
-    font-family: "Unbounded", "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    color: bold;
     font-weight: bold;
     font-size: 1.4vw;
     align-self: center;
@@ -534,7 +531,7 @@ to{
 #man-waving {
     position: relative;
     width: 18vw;
-    margin-top: 50vw;
+    margin-top: 58vw;
     margin-left: 5vw;
     animation: move-right 1s infinite;
 
@@ -547,7 +544,7 @@ to{
 #woman-smiling {
     position: relative;
     width: 28vw;
-    margin-top: 48vw;
+    margin-top: 52vw;
     margin-left: 5vw;
     animation: move-left 1s infinite;
 }
@@ -568,7 +565,6 @@ to{
 .Imhome-text {
     position: relative;
     color: black;
-    font-family: "Unbounded", "Futura", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     font-weight: bold;
     font-size: 2vw;
     align-self: center;
@@ -576,11 +572,6 @@ to{
     margin-left: 1.7vw;
 }
 
-#annoy-section::after {
-    content: '';
-    display: block;
-    height: 50vh; 
-}
 
 /* footer section*/
 #footer {
@@ -588,12 +579,12 @@ to{
     background-color: #ffce55;
     width: 100%;
     height: 50vh;
-    /*bottom: 0;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 3vw;
 }
+
 
 
