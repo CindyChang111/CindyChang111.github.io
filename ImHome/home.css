@@ -483,13 +483,12 @@ to{
 
 .shutup-text {
     position: relative;
-    color: bold;
+    color: black;
     font-weight: bold;
     font-size: 1.4vw;
     align-self: center;
     text-align: center;
-    margin-left: 1.7vw;
-    
+    margin-left: 1.7vw;   
 }
 
 #yellow-music {
