@@ -12,9 +12,56 @@
     <section id="intro-section">
         <div id="introduction">
             <div id="door">
-                <img id="door-closed" src="door closed.png" alt="door is closed.">
-                <img id="door-open" src="door open.png" alt="door is open. Someone's home!">
+                <!-- Closed door image -->
+                <img id="door-closed" src="door closed.png" alt="door is closed." style="cursor: pointer;">
+                <!-- Open door image -->
+                <img id="door-open" src="door open.png" alt="door is open. Someone's home!" style="cursor: pointer; display: none;">
+                <!-- Audio element -->
+                <audio id="door-audio" src="welcome-home.mp3"></audio>
+                <audio id="scroll-audio" src="family-holiday.mp3"></audio>
             </div>
+            
+            <script>
+                // Preload images
+                const images = ['door-closed.png', 'door-open.png', 'door-sound.mp3', 'family-holiday.mp3'];
+                preloadImages(images);
+                
+                function preloadImages(images) {
+                    for (let i = 0; i < images.length; i++) {
+                        const img = new Image();
+                        img.src = images[i];
+                    }
+                }
+                
+                // Get references to the elements
+                const doorClosed = document.getElementById('door-closed');
+                const doorOpen = document.getElementById('door-open');
+                const doorAudio = document.getElementById('door-audio');
+                const scrollAudio = document.getElementById('scroll-audio');
+
+                // Add click event listener to the closed door image
+                doorClosed.addEventListener('click', function() {
+                    // Play the audio
+                    doorAudio.play();
+                    
+                    // Hide closed door, show open door
+                    doorClosed.style.display = 'none';
+                    doorOpen.style.display = 'block';
+                });
+                
+                // Add click event listener to the open door image
+                doorOpen.addEventListener('click', function() {
+                    // Hide open door, show closed door
+                    doorOpen.style.display = 'none';
+                    doorClosed.style.display = 'block';
+                });
+
+                // Add scroll event listener to the window
+                window.addEventListener('scroll', function() {
+                    // Play the scroll audio when the user scrolls
+                    scrollAudio.play();
+                });
+            </script>
 
             <div id="title" class="font">
                 I'm Home!
@@ -133,7 +180,7 @@
 
     <div id="download">
         <a style="text-decoration:none" href="https://ifttt.com/applets/xkMpHhYW-i-m-home?utm_medium=direct&utm_source=connection&utm_campaign=share_button">
-            <div class="download-button font medium">
+            <div class="download-button font medium" aria-label="Download button">
                 download
             </div>
         </a>
