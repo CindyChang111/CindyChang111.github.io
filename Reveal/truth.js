@@ -1,11 +1,10 @@
-'use strict';
 
-var font = 'sans-serif';
-var letter = 'Truth';
+
+var font = 'Copperplate';
+var letter = 'ALIVE';
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(255);
   fill(0);
 
   textFont(font);
