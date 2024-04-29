@@ -5,16 +5,16 @@ var y = 0;
 var stepSize = 5.0;
 
 var font = 'Georgia';
-var letters = 'All the world\'s a stage, and all the men and women merely players. They have their exits and their entrances.';
-var fontSizeMin = 3;
+var letters = 'Let us pretend for a little longer';
+var fontSizeMin = 4;
 var angleDistortion = 0.0;
 
 var counter = 0;
 
 function setup() {
   // use full screen size
-  createCanvas(displayWidth, displayHeight);
-  background(255);
+  createCanvas(800, 800);
+  background(148, 212, 151);
   cursor(CROSS);
 
   x = mouseX;
@@ -57,7 +57,7 @@ function mousePressed() {
 
 function keyReleased() {
   if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
-  if (keyCode == DELETE || keyCode == BACKSPACE) background(255);
+  if (keyCode == DELETE || keyCode == BACKSPACE) background(196, 126, 193);
 }
 
 function keyPressed() {
