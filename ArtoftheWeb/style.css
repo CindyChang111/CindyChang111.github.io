@@ -1,0 +1,529 @@
+body {
+    background-color: #231F20;
+    margin: 0;
+}
+
+#nav {
+    display: flex;
+    align-items: center; /* Align items vertically at the center */
+    width: 100%;
+    height: 6vw;
+    background-color: black;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 0.5vw;
+
+    border: none;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'Secular One';
+    font-size: 1.5vw;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 18vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 2%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #C5A5E9;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: black;}
+
+
+#menu {
+    margin-right: 0vw;
+    margin-left: 1vw;
+}
+
+#menu img{
+    width: 2vw;
+}
+
+#title {
+    font-family: 'Secular One';
+    font-size: 2vw;
+    color: white;
+    margin-left: 1vw;
+}
+
+#cindy {
+    position: relative;
+    width: 20vw;
+    height: auto;
+}
+
+#cindy img {
+    position: absolute;
+    top: 22vw;
+    left: 63vw;
+    width: 100%;
+    height: auto;
+   
+}
+
+#cindy img.hover-image {
+    opacity: 0; 
+}
+
+#cindy:hover img.normal-image {
+    opacity: 0; 
+}
+
+#cindy:hover img.hover-image {
+    opacity: 1; 
+}
+
+#cindy:hover img.hover-image {
+    animation: tilt-left 1s infinite;
+}
+
+#cindy:hover .overlay-text-right-bottom {
+    opacity: 1;
+    z-index: -1;
+}
+
+
+
+#home {
+    position: relative;
+    width: 31vw;
+    height: auto;
+}
+
+#home img {
+    position: absolute;
+    top: 5vw;
+    left: 48vw;
+    width: 100%;
+    height: auto;
+   
+}
+
+#home img.hover-image {
+    opacity: 0; 
+}
+
+#home:hover img.normal-image {
+    opacity: 0; 
+}
+
+#home:hover img.hover-image {
+    opacity: 1; 
+}
+
+#home:hover img.hover-image {
+    animation: bounce 1s infinite;
+}
+
+#home:hover .overlay-text-right {
+    opacity: 1;
+    z-index: -1;
+}
+
+
+
+
+#pixel {
+    position: absolute;
+    width: 9vw;
+    height: auto;
+    margin-top: 25vw; 
+    margin-left: 57vw;; 
+    z-index: 2;
+}
+
+#pixel .normal-image,
+#pixel .hover-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#pixel .hover-image {
+    display: none; 
+}
+
+#pixel:hover .normal-image {
+    display: none; 
+}
+
+#pixel:hover .hover-image {
+    display: block; 
+    animation: bounce 1s infinite; 
+}
+
+#pixel:hover .overlay-text-pixel {
+    opacity: 1;
+    z-index: -1; 
+}
+
+/*curated*/
+#curated {
+    position: relative;
+    width: 27vw;
+    height: auto;
+}
+
+#curated img {
+    position: absolute;
+    top: 24vw;
+    left: 30vw;
+    width: 100%;
+    height: auto;
+   
+}
+
+#curated img.hover-image {
+    opacity: 0; 
+}
+
+#curated:hover img.normal-image {
+    opacity: 0; 
+}
+
+#curated:hover img.hover-image {
+    opacity: 1; 
+    animation: bounce 1s infinite;
+}
+
+#curated:hover .overlay-text-bottom {
+    opacity: 1;
+    z-index: -1;
+}
+
+
+/*reveal*/
+#reveal {
+    position: relative;
+    width: 12vw;
+    height: auto;
+}
+
+#reveal img {
+    position: absolute;
+    top: 36vw;
+    left: 22vw;
+    width: 100%;
+    height: auto;
+   
+}
+
+#reveal img.hover-image {
+    opacity: 0; 
+}
+
+#reveal:hover img.normal-image {
+    opacity: 0; 
+}
+
+#reveal:hover img.hover-image {
+    opacity: 1; 
+    animation: tilt 1s infinite;
+}
+
+#reveal:hover .overlay-text-left-bottom {
+    opacity: 1;
+    z-index: -1; 
+}
+
+/*still*/
+#still {
+    position: relative;
+    width: 30vw;
+    height: auto;
+}
+
+#still img {
+    position: absolute;
+    top: 7vw;
+    left: 33vw;
+    width: 100%;
+    height: auto;
+   
+}
+
+#still img.hover-image {
+    opacity: 0; 
+}
+
+#still:hover img.normal-image {
+    opacity: 0; 
+}
+
+#still:hover img.hover-image {
+    opacity: 1; 
+    animation: bounce 1s infinite;
+}
+
+#still:hover .overlay-text-still {
+    opacity: 1;
+    z-index: -1;
+}
+
+
+#duck {
+    position: relative;
+    width: 27vw;
+    height: auto;
+}
+
+#duck img {
+    position: absolute;
+    top: 3vw;
+    left: 15vw;
+    width: 100%;
+    height: auto;
+   
+}
+
+#duck img.hover-image {
+    opacity: 0; 
+}
+
+#duck:hover img.normal-image {
+    opacity: 0; 
+}
+
+#duck:hover img.hover-image {
+    opacity: 1; 
+    animation: tilt-left 1s infinite;
+}
+
+#duck:hover .overlay-text-left {
+    opacity: 1;
+    z-index: -1;
+}
+
+/*time */
+#time {
+    position: relative;
+    width: 18vw;
+    height: auto;
+    transform: rotate(20deg);
+}
+
+#time img {
+    position: absolute;
+    top: 11vw;
+    left: 63vw;
+    width: 100%;
+    height: auto;
+   
+}
+
+#time img.hover-image {
+    opacity: 0; 
+}
+
+#time:hover img.normal-image {
+    opacity: 0; 
+}
+
+#time:hover img.hover-image {
+    opacity: 1; 
+    animation: tilt-left 1s infinite;
+}
+
+#time:hover .overlay-text-time {
+    opacity: 1;
+    z-index: -1;
+}
+
+
+.overlay-text-right {
+    position: absolute;
+    top: 0;
+    left: 72vw;;
+    width: 90%;
+    height: 100%;
+    background-color: #231F20; 
+    color: white;
+    font-family: 'Futura';
+    font-size: 1.7vw;
+    padding: 2vw; 
+    box-sizing: border-box; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: -1; 
+    text-align: right;
+}
+
+.overlay-text-right-bottom {
+    position: absolute;
+    top: 30vw;
+    left: 82vw;;
+    width: 90%;
+    background-color: #231F20; 
+    color: white;
+    font-family: 'Futura';
+    font-size: 1.7vw;
+    padding: 2vw; 
+    box-sizing: border-box; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: -1; 
+    text-align: right;
+}
+
+.overlay-text-pixel {
+    position: absolute;
+    top: 24vw;
+    left: 3vw;;
+    width: 230%;
+    background-color: #231F20; 
+    color: white;
+    font-family: 'Futura';
+    font-size: 1.7vw;
+    padding: 2vw; 
+    box-sizing: border-box; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: -1; 
+    text-align: right;
+}
+
+.overlay-text-left {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;;
+    width: 80%;
+    height: 100%;
+    background-color: #231F20; 
+    color: white;
+    font-family: 'Futura';
+    font-size: 1.7vw;
+    padding: 2vw; 
+    box-sizing: border-box; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: -1; 
+    text-align: left;
+}
+
+.overlay-text-left-bottom {
+    position: absolute;
+    top: 32vw;
+    left: 0vw;;
+    width: 190%;
+    background-color: #231F20; 
+    color: white;
+    font-family: 'Futura';
+    font-size: 1.7vw;
+    padding: 2vw; 
+    box-sizing: border-box; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: -1; 
+    text-align: left;
+}
+
+.overlay-text-bottom {
+    position: absolute;
+    top: 48vw;
+    left: 29vw;;
+    width: 120%;
+    height: 100%;
+    background-color: #231F20; 
+    color: white;
+    font-family: 'Futura';
+    font-size: 1.7vw;
+    padding: 2vw; 
+    box-sizing: border-box; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: -1; 
+    text-align: center;
+}
+
+.overlay-text-still {
+    position: absolute;
+    top: 2vw;
+    left: 50vw;
+    width: 200%;
+    background-color: white; 
+    color: white;
+    font-family: 'Futura';
+    font-size: 1.7vw;
+    padding: 2vw; 
+    box-sizing: border-box; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    text-align: center;
+    z-index: -1; 
+}
+
+.overlay-text-time{
+    position: absolute;
+    top: 39vw;
+    left: 37vw;
+    width: 150%;
+    background-color: #231F20; 
+    color: white;
+    font-family: 'Futura';
+    font-size: 1.7vw;
+    padding: 2vw; 
+    box-sizing: border-box; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    text-align: left;
+    z-index: -1; 
+    transform: rotate(-20deg);
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes grow {
+    from{
+        width: 0;
+    
+    }
+    to{
+        width: 40%;
+    }
+    
+}
+
+@keyframes tilt {
+    0% {transform: rotate(0deg);}
+    100% {transform:rotate(-20deg);}
+}
+
+@keyframes tilt-left {
+    0% {transform: rotate(0deg);}
+    100% {transform:rotate(12deg);}
+}
+
