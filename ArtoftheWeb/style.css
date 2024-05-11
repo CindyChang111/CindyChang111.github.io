@@ -527,3 +527,33 @@ body {
     100% {transform:rotate(12deg);}
 }
 
+#read {
+    position: relative;
+    width: 10vw;
+    height: auto;
+}
+
+#read img {
+    position: absolute;
+    top: 33vw;
+    left: 18vw;
+    width: 100%;
+    height: auto;
+}
+
+#read:hover {
+    animation: bounce 1s infinite;
+}
+.reading-title {
+    font-family: 'Futura';
+    font-size: 3vw;
+    color: white; 
+    padding: 5vw; 
+}
+.reading {
+    font-family: 'Futura';
+    font-size: 2vw;
+    color: white; 
+    padding: 5vw; 
+}
+
