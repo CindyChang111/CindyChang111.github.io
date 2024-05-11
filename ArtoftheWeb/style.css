@@ -529,14 +529,14 @@ body {
 
 #read {
     position: relative;
-    width: 10vw;
+    width: 9vw;
     height: auto;
 }
 
 #read img {
     position: absolute;
     top: 33vw;
-    left: 18vw;
+    left: 20vw;
     width: 100%;
     height: auto;
 }
